@@ -56,7 +56,7 @@ func boilerplate(url string, ch chan *ResultFormData) {
 		log.Fatal(err)
 	}
 
-	h1, desc := asd(res) //"", ""
+	h1, desc := "", "" //asd(res)
 
 	doc, err := boilerpipe.ParseDocument(res.Body)
 	if err != nil {
